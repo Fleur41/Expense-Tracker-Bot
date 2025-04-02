@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Log an Expense</h1>
+    <form method="POST">
+        <input type="text" name="user" placeholder="Your Name" required><br>
+        <input type="text" name="category" placeholder="Category" required><br>
+        <input type="number" name="amount" placeholder="Amount" required><br>
+        <textarea name="description" placeholder="Description"></textarea><br>
+        <input type="date" name="date" required><br>
+        <button type="submit">Log Expense</button>
+    </form>
+</body>
+</html>
